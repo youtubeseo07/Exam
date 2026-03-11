@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI MCQ Generator</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+
+body{
+font-family: Arial;
+text-align:center;
+background:#f2f2f2;
+}
+
+textarea{
+width:80%;
+}
+
+.question{
+background:white;
+padding:15px;
+margin:15px;
+border-radius:10px;
+}
+
+button{
+padding:10px 20px;
+margin:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>AI MCQ Exam Generator</h2>
+
+<textarea id="topic" rows="4" placeholder="यहाँ topic लिखो"></textarea>
+
+<br>
+
+<button onclick="generate()">Generate 50 MCQ</button>
+
+<h3 id="timer">Time: 30:00</h3>
+
+<div id="quiz"></div>
+
+<button onclick="submitQuiz()">Submit Exam</button>
+
+<h2 id="result"></h2>
+
+<button onclick="downloadPDF()">Download PDF</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
